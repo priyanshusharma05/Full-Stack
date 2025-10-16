@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magazine Layout</title>
+
+  <style>
+    /* Page styling */
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: "Georgia", serif;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    /* Heading spanning all columns */
+    h1 {
+      text-align: center;
+      column-span: all; /* span across all columns */
+      -webkit-column-span: all; /* for Safari */
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: #0d6efd;
+    }
+
+    /* Columns */
+    .columns {
+      column-count: 3;
+      column-gap: 30px;
+      text-align: justify;
+      line-height: 1.8;
+    }
+
+    /* Image floated to left */
+    .columns img {
+      float: left;
+      margin-right: 15px;
+      margin-bottom: 15px;
+      width: 150px;
+      border-radius: 8px;
+    }
+
+    /* Responsive: reduce columns on smaller screens */
+    @media (max-width: 900px) {
+      .columns {
+        column-count: 2;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .columns {
+        column-count: 1;
+      }
+      .columns img {
+        float: none;
+        display: block;
+        margin: 0 auto 15px auto;
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>The Wonders of Nature</h1>
+
+    <div class="columns">
+      <p>
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Forest">
+        Nature offers an endless source of inspiration and beauty. From towering mountains to dense forests,
+        every aspect of the natural world has a story to tell. Wildlife, flora, and geological formations
+        combine to create breathtaking landscapes that capture our imagination.
+      </p>
+
+      <p>
+        Rivers carve valleys over millennia, and oceans shape the coastlines with their ceaseless waves. The
+        changing seasons bring new colors and textures, providing a dynamic canvas that evolves continuously.
+        Observing nature closely allows us to understand ecosystems and the delicate balance that sustains life.
+      </p>
+
+      <p>
+        Hiking through remote trails, one may witness rare species of plants and animals. Birdsong fills
+        the morning air while the rustling leaves create a soothing symphony. These moments remind us
+        of the tranquility and resilience of the natural world, which thrives beyond human intervention.
+      </p>
+
+      <p>
+        Conservation efforts are crucial to maintaining biodiversity. Protecting habitats, regulating
+        hunting, and controlling pollution help ensure that future generations can also enjoy
+        pristine environments. The connection between humans and nature is both spiritual and practical,
+        as we depend on ecosystems for resources and climate regulation.
+      </p>
+
+      <p>
+        Exploring different ecosystems, such as deserts, wetlands, and alpine regions, highlights the
+        adaptability of life. Each environment presents unique challenges and showcases the ingenuity
+        of species that survive and flourish under harsh conditions. Nature, in its myriad forms,
+        continues to inspire scientists, artists, and adventurers alike.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>

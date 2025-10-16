@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Team</title>
+
+  <!-- Internal CSS -->
+  <style>
+    /* General Body Style */
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #0d6efd;
+    }
+
+    /* Container for Cards */
+    .team-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    /* Individual Card */
+    .team-card {
+      background-color: #ffffff;
+      border: 2px solid #e0e0e0;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 10px;
+      width: 30%;
+      box-sizing: border-box;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .team-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Highlighted Card (Team Lead) */
+    .team-lead {
+      background-color: #0d6efd;
+      color: white;
+      border: 2px solid #003f9e;
+    }
+
+    /* Image Styling */
+    .team-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #0d6efd;
+    }
+
+    /* Name & Role */
+    .team-card h2 {
+      font-size: 1.3rem;
+      margin-bottom: 5px;
+    }
+
+    .team-card h3 {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #777;
+      margin-bottom: 15px;
+    }
+
+    .team-lead h3 {
+      color: #dbe9ff;
+    }
+
+    /* Description */
+    .team-card p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #444;
+    }
+
+    .team-lead p {
+      color: #f0f8ff;
+    }
+
+    /* Responsive Design: Single Column below 600px */
+    @media (max-width: 600px) {
+      .team-card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Meet Our Team</h1>
+
+  <div class="team-container">
+    <!-- Member 1 -->
+    <div class="team-card">
+      <img src="https://via.placeholder.com/100" alt="Member 1">
+      <h2>Ravi Sharma</h2>
+      <h3>Frontend Developer</h3>
+      <p>
+        Ravi is skilled in HTML, CSS, and JavaScript. He creates responsive and visually appealing web designs.
+      </p>
+    </div>
+
+    <!-- Member 2 (Team Lead - Highlighted) -->
+    <div class="team-card team-lead">
+      <img src="https://via.placeholder.com/100" alt="Team Lead">
+      <h2>Narendra Modi</h2>
+      <h3>Team Lead</h3>
+      <p>
+        Narendra leads the team with passion and creativity, ensuring that every project exceeds expectations.
+      </p>
+    </div>
+
+    <!-- Member 3 -->
+    <div class="team-card">
+      <img src="https://via.placeholder.com/100" alt="Member 3">
+      <h2>Priya Verma</h2>
+      <h3>Backend Developer</h3>
+      <p>
+        Priya specializes in database management and API development using Node.js and MongoDB.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

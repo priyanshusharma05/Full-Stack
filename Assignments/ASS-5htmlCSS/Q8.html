@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Layout</title>
+
+  <style>
+    /* Reset and body */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f4f6f9;
+    }
+
+    /* Header */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background-color: #0d6efd;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    /* Wrapper for sidebar + main content */
+    .dashboard {
+      display: flex;
+      margin-top: 60px; /* space for fixed header */
+      min-height: calc(100vh - 60px);
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      background-color: #1e272e;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      height: calc(100vh - 60px);
+      position: fixed;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      margin-bottom: 15px;
+      padding: 10px 12px;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #0d6efd;
+    }
+
+    /* Main Content */
+    .main-content {
+      flex: 1;
+      margin-left: 220px; /* same as sidebar width */
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .content-box {
+      flex: 1 1 45%; /* 2 boxes per row */
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      min-height: 150px;
+    }
+
+    /* Responsive layout */
+    @media (max-width: 768px) {
+      .dashboard {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+
+      .main-content {
+        margin-left: 0;
+      }
+
+      .content-box {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>Dashboard</header>
+
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <a href="#">Home</a>
+      <a href="#">Profile</a>
+      <a href="#">Analytics</a>
+      <a href="#">Settings</a>
+      <a href="#">Logout</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="content-box">
+        <h3>Content Box 1</h3>
+        <p>This is some information for the first box.</p>
+      </div>
+
+      <div class="content-box">
+        <h3>Content Box 2</h3>
+        <p>This is some information for the second box.</p>
+      </div>
+
+      <!-- Additional content boxes can be added -->
+    </div>
+  </div>
+
+</body>
+</html>

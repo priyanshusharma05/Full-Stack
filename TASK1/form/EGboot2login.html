@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- use defer after script if we are attaching js file in head tag -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-light">
+    <div class="container py-5" >
+        <div class="row justify-content-center align-items-center" style="height: 85vh;">
+            <div class="col-lg-5 col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body p-4">
+                        <h3 class="text-center mb-4">Login to your Account</h3>
+                        <form action="">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                <input type="email" required class="form-control" id="exampleFormControlInput1"
+                                    placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password"
+                                    placeholder="Enter your Password">
+                            </div>
+                            <!-- button  -->
+                             <div class="d-grid">
+                                <button type="button" class="btn btn-primary" onclick="handleLogin()">Login</button>
+                             </div>
+                            <p class="text-center mt-4 mb-0">
+                                Don't have an acoount?
+                                <a href="EGboot2.html" class="text-decoration-none">Sign-up here</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    function handleLogin() {
+        let email = document.getElementById('exampleFormControlInput1').value;
+        let password = document.getElementById('password').value;
+
+        let emailpattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        let passpattern = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@#$%^&+=!]).{8,}$/;
+        // VALIDATION
+        if (email === "" || password === "") {
+            alert("Please fill out all fields");
+            return;
+        }
+        if (!emailpattern.test(email)) {
+            alert("Please enter a valid email");
+            return;
+        }
+        if (!passpattern.test(password)) {
+            alert("Password must be minimum 8 characters and include uppercase, number & special char");
+            return;
+        }
+
+        // LOGIN USING XHR (AJAX)
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", `http://localhost:3000/users?email=${email}&password=${password}`, true);
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) { 
+                if (xhr.status === 200) {
+                    const data = JSON.parse(xhr.responseText);
+
+                    if (data.length > 0) {
+                        alert("Login Successful (XHR)!");
+                    } else {
+                        alert("Invalid Email or Password!");
+                    }
+                } else {
+                    alert("Server error!");
+                }
+            }
+        };
+
+        xhr.send();
+    }
+</script>
+
+</body>
+
+</html>

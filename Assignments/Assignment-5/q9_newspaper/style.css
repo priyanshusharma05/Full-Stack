@@ -1,0 +1,12 @@
+/* Q9 Newspaper / magazine columns */
+body{font-family:'Georgia',serif;background:#fff8ed;padding:2rem;}
+.paper{max-width:900px;margin:0 auto;background:#fff;padding:2rem;border-radius:8px;}
+.headline{column-span:all;column-count:1;text-align:center;font-size:2rem;margin-bottom:1rem;}
+.columns{column-count:3;column-gap:2rem;text-align:justify;}
+.floatimg{float:left;margin-right:1rem;margin-bottom:0.5rem;border-radius:6px;}
+@media (max-width:900px){
+  .columns{column-count:2;}
+}
+@media (max-width:600px){
+  .columns{column-count:1;}
+}

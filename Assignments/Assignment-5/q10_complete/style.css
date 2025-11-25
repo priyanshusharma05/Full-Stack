@@ -1,0 +1,20 @@
+/* Q10 Complete layout demonstrating box-model & positioning */
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial;background:#f6f8fb;}
+.site-header{position:sticky;top:0;background:rgba(11,18,32,0.95);color:white;padding:0.8rem 1rem;z-index:20;}
+.site-header nav a{color:white;margin-right:1rem;text-decoration:none;}
+.hero{height:40vh;background-image:url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%221600%22%20height%3D%22600%22%3E%0A%20%20%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23bde0fe%22/%3E%0A%20%20%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20font-size%3D%2224%22%20fill%3D%22%23444%22%3EHero%3C/text%3E%0A%3C/svg%3E');background-size:cover;background-position:center;display:flex;align-items:center;justify-content:center;position:relative;}
+.hero-text{background:rgba(255,255,255,0.6);padding:1rem 2rem;border-radius:8px;}
+.about{display:flex;gap:1rem;padding:2rem;align-items:center;}
+.about .col{flex:1;padding:1rem;}
+.services{display:flex;gap:1rem;padding:1rem;}
+.service{flex:1;background:white;padding:1rem;border:1px solid rgba(2,6,23,0.06);box-shadow:0 8px 20px rgba(2,6,23,0.06);min-height:120px;}
+.contact form{padding:1rem;display:flex;gap:0.5rem;align-items:center;}
+.contact input{padding:0.5rem;border-radius:6px;border:1px solid #cbd5e1;}
+.foot{text-align:center;padding:1rem;background:#0b1220;color:white;}
+/* use outline, margin, padding, border in examples */
+.service{margin:0;border-radius:8px;outline:2px solid rgba(0,0,0,0.03);}
+@media (max-width:800px){
+  .about{flex-direction:column;}
+  .services{flex-direction:column;}
+}

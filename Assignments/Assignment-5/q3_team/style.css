@@ -1,0 +1,12 @@
+/* Q3: Team members */
+*{box-sizing:border-box}
+body{font-family:Arial;margin:2rem;background:#f7fafc;}
+.team{display:flex;gap:1rem;justify-content:space-between;align-items:flex-start;max-width:1000px;margin:0 auto;}
+.card{flex:1;padding:1.25rem;border:2px solid #e2e8f0;border-radius:8px;box-shadow:0 6px 18px rgba(2,6,23,0.06);min-height:180px;}
+.card h3{margin-top:0;}
+.card .role{font-weight:600;color:#374151;}
+.card.lead{background:#fff7ed;border-style:double;border-color:#f6ad55;}
+/* Responsive: stack into one column <600px */
+@media (max-width:600px){
+  .team{flex-direction:column;}
+}

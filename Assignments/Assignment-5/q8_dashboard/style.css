@@ -1,0 +1,15 @@
+/* Q8 Dashboard */
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial;background:#f8fafc;}
+.top{position:fixed;top:0;left:0;right:0;height:56px;background:#0b1220;color:white;display:flex;align-items:center;padding:0 1rem;z-index:10;}
+.layout{display:flex;margin-top:56px;min-height:calc(100vh - 56px);}
+.sidebar{width:220px;background:#082032;color:white;padding:1rem;min-height:100vh;position:sticky;top:56px;}
+.sidebar nav a{display:block;color:white;text-decoration:none;padding:0.5rem 0;}
+.content{flex:1;padding:1rem;display:flex;gap:1rem;flex-wrap:wrap;align-content:flex-start;}
+.box{flex:1 1 45%;min-height:180px;background:white;border-radius:8px;box-shadow:0 10px 30px rgba(2,6,23,0.06);padding:1rem;}
+@media (max-width:800px){
+  .layout{flex-direction:column;}
+  .sidebar{width:auto;min-height:auto;position:relative;}
+  .content{padding:0.5rem;}
+  .box{flex-basis:100%;}
+}

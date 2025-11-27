@@ -1,0 +1,109 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "fullName": "Priyanshu",
+      "email": "counterearth6400@gmail.com",
+      "password": "password123",
+      "createdAt": "2024-11-24"
+    },
+    {
+      "id": "1764003504109",
+      "fullName": "Priyanshu Sharma",
+      "email": "nono12@gmail.com",
+      "password": "abc123",
+      "createdAt": "2025-11-24"
+    },
+    {
+      "id": "1764005604948",
+      "fullName": "xxxx",
+      "email": "xyz@gmail.com",
+      "password": "xxx000",
+      "createdAt": "2025-11-24"
+    }
+  ],
+  "students": [
+    {
+      "rollNumber": "69",
+      "section": "CC",
+      "name": "Rahul Chamar",
+      "id": "1764003656364"
+    },
+    {
+      "id": "1764004299771",
+      "name": "Priyanshu sharma ",
+      "section": "CB",
+      "rollNumber": "38"
+    },
+    {
+      "id": "1764004510236",
+      "name": "Vinayak Tiwari",
+      "section": "CD",
+      "rollNumber": "25"
+    },
+    {
+      "id": "1764092259272",
+      "name": "Niwas",
+      "section": "CA",
+      "rollNumber": "12"
+    },
+    {
+      "id": 1764212456662,
+      "name": "kartik",
+      "section": "Super30",
+      "rollNumber": "24"
+    }
+  ],
+  "results": [
+    {
+      "subject": "Full Stack",
+      "totalMarks": 100,
+      "marks": 67,
+      "id": "1764092277358",
+      "studentId": "1764003656364"
+    },
+    {
+      "id": "1764092834327",
+      "studentId": 1764004299771,
+      "subject": "Math",
+      "marks": 99,
+      "totalMarks": 100
+    },
+    {
+      "id": "1764092864564",
+      "studentId": 1764004510236,
+      "subject": "English",
+      "marks": 43,
+      "totalMarks": 100
+    },
+    {
+      "id": 1764212510007,
+      "studentId": 1764212456662,
+      "subject": "DSA",
+      "marks": 45,
+      "totalMarks": 100
+    }
+  ],
+  "sections": [
+    {
+      "id": "1",
+      "sectionName": "CA"
+    },
+    {
+      "id": "2",
+      "sectionName": "CB"
+    },
+    {
+      "id": "3",
+      "sectionName": "CC"
+    },
+    {
+      "id": "12d5",
+      "sectionName": "CD"
+    },
+    {
+      "id": "b668",
+      "sectionName": "Super30"
+    }
+  ]
+}

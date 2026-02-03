@@ -1,0 +1,134 @@
+/* Reset and Body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  z-index: 100;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+/* Section Base */
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5vh 10%;
+}
+
+.content {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  padding: 2rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  max-width: 800px;
+}
+
+/* Section: Overview (Background Image + Fixed) */
+.overview {
+  background: url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1600&q=80')
+    center/cover no-repeat fixed;
+}
+
+/* Section: Linear Gradient */
+.gradient-linear {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+}
+
+/* Section: Parallax 1 */
+.parallax1 {
+  background: url('https://images.unsplash.com/photo-1508057198894-247b23fe5ade?auto=format&fit=crop&w=1600&q=80')
+    center/cover no-repeat fixed;
+}
+
+/* Section: Radial Gradient */
+.gradient-radial {
+  background: radial-gradient(circle, #007bff, #001f3f);
+}
+
+/* Section: Parallax 2 */
+.parallax2 {
+  background: url('https://images.unsplash.com/photo-1511732351669-7a45f1f3f94b?auto=format&fit=crop&w=1600&q=80')
+    center/cover no-repeat fixed;
+}
+
+/* Headings and Text Styling */
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Spacing for Fixed Header */
+main {
+  margin-top: 80px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+    margin-left: 1rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}

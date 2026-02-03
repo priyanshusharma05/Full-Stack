@@ -1,0 +1,9 @@
+/* Q4: Long article */
+body{font-family:Georgia, 'Times New Roman', serif;margin:2rem;background:#fbfcfd;color:#0b1220;}
+header h1{font-size:2.4rem;margin-bottom:0.25rem;}
+.meta h2{font-size:1rem;color:#64748b;margin-bottom:1rem;font-weight:400;}
+.content p{margin:1rem 0 1rem 0;text-align:justify;}
+.content p::first-letter{font-size:2.2rem;font-weight:700;float:left;margin-right:0.4rem;color:#0b1220;}
+.content p::first-line{font-weight:700;}
+mark{background:#fff3b0;padding:0 0.15rem;border-radius:2px;}
+blockquote{margin:1.5rem 0;padding:1rem;border-left:6px solid rgba(11,18,32,0.6);background:#f1f5f9;}

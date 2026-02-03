@@ -1,0 +1,65 @@
+/* Q1: Portfolio style.css */
+/* Header fixed at top */
+:root{
+  --bg:#0f1724;
+  --accent:#f8fafc;
+  --muted:#9aa6b2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:system-ui,Segoe UI,Roboto,Arial;
+  background:linear-gradient(180deg,#f6f8fb 0%, #ffffff 100%);
+  color:#102027;
+  padding-top:4rem; /* leave space for fixed header */
+}
+.site-header{
+  position:fixed;
+  top:0; left:0; right:0;
+  height:4rem;
+  background:var(--bg);
+  color:var(--accent);
+  display:flex;
+  align-items:center;
+  box-shadow:0 2px 8px rgba(2,6,23,0.2);
+  z-index:1000;
+}
+.site-header .container{
+  width:90%;
+  margin:0 auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.site-header nav a{
+  color:var(--accent);
+  margin-left:1rem;
+  text-decoration:none;
+  font-size:0.95rem; /* em/rem usage */
+}
+.container{max-width:1000px;margin:2rem auto;}
+.intro{
+  display:flex;
+  gap:1.5rem;
+  align-items:center;
+  padding:2rem;
+  background:#fff;
+  border-radius:8px;
+  box-shadow:0 6px 20px rgba(16,32,39,0.06);
+}
+/* profile image sized with different units */
+.profile{width:12rem;height:auto;border-radius:50%;border:4px solid rgba(15,23,36,0.06);}
+.bio{font-size:1rem;line-height:1.6;color:var(--muted);}
+/* footer fixed to bottom of page (flexbox) */
+.site-footer{
+  position:relative;
+  margin-top:4rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:4rem;
+  background:#0b1220;
+  color:#cfe7ff;
+}
+/* Demonstrate use of px, em, %, vh, rem */
+.name{font-size:1.25rem;padding-left:0.2rem;}

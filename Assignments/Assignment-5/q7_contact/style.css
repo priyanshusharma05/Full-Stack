@@ -1,0 +1,8 @@
+/* Q7 Contact form */
+body{font-family:Arial;background:#f1f5f9;height:100vh;display:flex;align-items:center;justify-content:center;margin:0;}
+.wrap{width:100%;max-width:520px;padding:1rem;}
+.contact{background:white;padding:1.5rem;border-radius:8px;box-shadow:0 8px 24px rgba(2,6,23,0.08);display:flex;flex-direction:column;gap:0.75rem;}
+.contact label{display:flex;flex-direction:column;font-size:0.9rem;}
+.contact input,.contact textarea{padding:0.6rem;border-radius:6px;border:1px solid #cbd5e1;outline:none;box-shadow:inset 0 0 0 rgba(0,0,0,0.02);}
+.contact input:focus,.contact textarea:focus{border-color:#3b82f6;box-shadow:0 0 0 3px rgba(59,130,246,0.12);}
+.contact button{padding:0.7rem;border-radius:6px;border:none;background:#0b1220;color:white;cursor:pointer;}

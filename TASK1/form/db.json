@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "priyanshu@google.com",
+      "password": "@Sharma01234"
+    },
+    {
+      "id": "56e6",
+      "email": "counterearth6400@gmail.com",
+      "phone_number": "8865868703",
+      "password": "#Sharma123"
+    },
+    {
+      "id": "3c16",
+      "name": "Priyanshu Sharma",
+      "email": "xyz@fetchapi.com",
+      "phone": "8865868000",
+      "country": "india",
+      "gender": "male",
+      "password": "#Ab123456"
+    },
+    {
+      "id": "73ad",
+      "name": "Priyanshu Sharma",
+      "email": "xyz@Axios.com",
+      "phone": "8899868703",
+      "country": "india",
+      "gender": "male",
+      "password": "#A123456z"
+    },
+    {
+      "id": "4729",
+      "name": "Priyanshu Sharma",
+      "email": "xyz@jQuery.com",
+      "phone": "8000868703",
+      "country": "india",
+      "gender": "male",
+      "password": "@Ac123456"
+    }
+  ]
+}
